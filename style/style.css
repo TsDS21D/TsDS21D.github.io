@@ -1,0 +1,24 @@
+p {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+#line {
+    color: green ;
+    text-decoration: underline;
+}
+#line:hover {
+    color: blue ;
+    text-decoration: none;
+    font-size: 20pt;
+}
+ h1::before {
+    content: "\273f";
+ }
+ /* * {
+    color: brown;
+ } */
