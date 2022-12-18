@@ -39,4 +39,10 @@ input {
 }
 input:focus {
     border: 4px solid #6c00ff;
+    transform: translateX(15px);
+    width: 385px;
+}
+button {
+    cursor: pointer;
+    padding: 10px 30px;
 }
