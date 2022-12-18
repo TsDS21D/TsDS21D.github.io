@@ -4,3 +4,10 @@ body {
     margin: 0;
     background-image: url(../img/snow4.png);
 }
+h1 {
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #032d3d;
+}
