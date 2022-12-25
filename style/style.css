@@ -120,3 +120,24 @@ button:hover {
     transform: scale(1.1);
 
 }
+
+p {
+    color: red;
+    margin: 10 px;
+    padding: 5px;
+    border: 10;
+    box-shadow: none;
+}
+.checkbox2::after {
+    color: green;
+    margin: 10 px;
+    padding: 5px;
+    border: 1;
+    box-shadow: none;
+}
+
+.checkbox2::before input ~ .checkmark {
+    background-color: #ccc678;
+}
+
+
