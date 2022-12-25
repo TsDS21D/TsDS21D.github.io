@@ -4,27 +4,40 @@
 }
 body {
     font-family: Montserrat;
-    background: #00b7ff;
-    margin: 20;
+    background: #3592df;
+    margin: 0;
     background-image: url(../img/snow4.png);
 }
 h1 {
+    text-align: center;
+    color: white;
     font-size: 18px;
     cursor: help;
     margin: 0;
     text-transform: uppercase;
     padding-bottom: 5px;
-    border-bottom: 3px solid #032d3d;
+    border-bottom: 3px solid #0f4458;
 }
-form {
-    margin: 0 auto;
-    background: rgba(50, 243, 144, 0.77);
+.container {
+    margin: 100px auto 0 auto;
+    background: rgba(1, 6, 20, 0.90);
     width: 450px;
     height: 500px;
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+    text-align: center;
 }
+
+.container img{
+    width: 160px;
+    height: 160px;
+    margin: -100px 0 20px 0;
+    border: 5px solid #0f4458;
+    border-radius: 50%;
+}
+
 .group {
+    color: white;
     margin: 10 px;
     padding: 5px;
 }
@@ -36,14 +49,14 @@ input {
     margin-top: 10px;
     height: 30px;
     width: 400px;
-    border-radius: 10px/10px;
+    border-radius: 5px/5px;
     border: none;
     padding-left: 15px;
     font-size: 18px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
 }
 input:focus {
-    border: 4px solid #6c00ff;
+    border: 4px solid #3592df;
     transform: translateX(15px);
     width: 385px;
 }
@@ -53,7 +66,7 @@ button {
     padding: 10px 30px;
     height: 50px;
     color: #fff;
-    background: #6c00ff;
+    background: #0e54a3;
     border: none;
     text-transform: uppercase;
     font-size: 15px;
