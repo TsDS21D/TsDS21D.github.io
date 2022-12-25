@@ -9,6 +9,7 @@ body {
     background-image: url(../img/snow4.png);
 }
 h1 {
+    font-size: 18px;
     cursor: help;
     margin: 0;
     text-transform: uppercase;
