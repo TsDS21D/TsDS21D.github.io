@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +8,28 @@
     <link rel="stylesheet" href="style/style.css"
 </head>
 <body>
-  
-<div class="container">
-    <img src="img/dubna_logo.png" alt="ГУ Дубна">
-    <form action="Регистрация" id="form" name="form" method="post">
-        <h1 title="Форма регистрации на сайте">Регистрация участников конференции</h1>
-        <div class="group">
-            <label for="">ФИО:</label>
-            <input type="text" placeholder="Ваша фамилия" id="fam" name="fam" data-reg="[А-ЯЁ][а-яё]*$"/>
-            <input type="text" placeholder="Ваше имя" id="name" name="name" data-reg="[А-ЯЁ][а-яё]*$"/>
-            <input type="text" placeholder="Ваше отчество" id="otch" name="otch" data-reg="[А-ЯЁ][а-яё]*$"/>
-        </div>
-        <div class="group">
-            <label for="">Контактный телефон:</label>
-            <input type="text" placeholder="Номер телефона" id="phone" name="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"/>
-        </div>
-        <div class="group">
-            <label for="">Адрес электронной почты:</label>
-            <input type="email" placeholder="E-mail" id="email" name="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"/>
-        </div>
-        <div class="group">
-            <label for="">Секция конференции:</label>
-        <select> 
-            <option selected>Выбрать секцию конференции</option>
-            <option>Математика</option>
-            <option>Физика</option>
-            <option>Информатика</option>
-            </select>
-        </div>
-        
-        <div class="group">
-            <label for="">Дата рождения:</label>
-            <input type="rojd" placeholder="Дата рождения" id="rojd" name="rojd" data-reg="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d"/>
-        </div>
-        
-        <p>
-            <label for="">Доклад</label>
-            <input type="checkbox" box-shadow: none; id="checkbox2" name="checkbox2"/>
-        </p>
+    <div class="vid_formy">
+        <form action="Регистрация" method="post" id="form" name="form">
+            <img for="fam" src="img/dubna_logo.png" alt="ГУ Дубна">
+            <h1>Регистрация участников конференции</h1>
+            <label for="fam">ФИО (на русском языке):</label><br>
+            <input placeholder="Ваша фамилия" type="text" name="fam" id="fam" required data-reg="[А-ЯЁ][а-яё]*$"><br>
+            <input placeholder="Ваше имя" type="text" name="imya" id="imya" required data-reg="[А-ЯЁ][а-яё]*$"><br>
+            <input placeholder="Ваше отчество" type="text" name="otch" id="otch" required data-reg="[А-ЯЁ][а-яё]*$"><br>
+            
+            <label for="">Контактный телефон:
+                <input placeholder="Номер телефона" type="text" name="phone" id="phone" required data-reg="^((\+7|7|8)+([0-9]){10})$"><br>
 
-        <div class="group">
-            <center><button>Зарегистрироваться</button></center>
-        </div>
+            </label><br>
 
-    </form>
 
-</div>    
-<footer>
-    <h3><center>2022-2023</center></h3>
-</footer>
-<script src="pages/app.js"></script> 
+            <center><button type="submit" id="button" class="button">Зарегистрироваться</button></center>
+
+        </form>
+
+    </div>
+    <footer class="out-block fami"></footer>
+    <!-- <script src="pages/script.js"></script> -->
+    <script src="pages/valid.js"></script>
 </body>
 </html>
